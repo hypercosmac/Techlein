@@ -1,6 +1,14 @@
  <!DOCTYPE html>
 <html>
 <head>
+<style>
+	div.transbox {
+	  margin: 30px;
+	  background-color: #ffffff;
+	  opacity: 0.4;
+	  filter: alpha(opacity=40); /* For IE8 and earlier */
+	}
+</style>
    <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -39,23 +47,30 @@
       <ul class="slides">
         <li>
           <img class ="responsive-img" src="images/IMG-20170610-WA0004.jpg"> <!-- random image -->
-          <div class="caption right-align">
-            <br><br><h3>Power of Connected Hackathon!</h3>
-            <h5 class="light grey-text text-lighten-3">Organized by Honeywell, 60 teams selcected out of 600</h5>
+          <<div class="caption right-align">
+          <div class="transbox">
+            
+            <br><h3 class="black-text" style="opacity: 1;">Power of Connected Hackathon!</h3>
+            <h5 class="black-text">Organized by Honeywell, 60 teams selcected out of 600</h5>
+          </div>
           </div>
         </li>
         <li>
           <img src="images/atv.jpeg"> <!-- random image -->
           <div class="caption left-align">
-            <h3>Idea of Autonomous Transporting Vehicle recognized by chairman of ISRO</h3>
-            <h5 class="light grey-text text-lighten-3">Mr. A. S. Kiran Kumar</h5>
+          <div class="transbox">
+            <h3 class="black-text" style="opacity: 1;">Idea of Autonomous Transporting Vehicle recognized by chairman of ISRO</h3>
+            <h5 class="black-text">Mr. A. S. Kiran Kumar</h5>
+          </div>
           </div>
         </li>
         <li>
           <img src="images/Med-cabinet.png"> <!-- random image -->
           <div class="caption right-align">
-            <h3>Presented the medicine cabinet and traffic glove at IEDF</h3>
-            <h5 class="light grey-text text-lighten-3">Audience with top engineers and designers</h5>
+          <div class="transbox">
+            <h3 class="black-text" style="opacity: 1;">Presented the medicine cabinet and traffic glove at IEDF</h3>
+            <h5 class="black-text">Audience with top engineers and designers</h5>
+          </div>
           </div>
         </li>
       </ul>
@@ -114,9 +129,24 @@
 	              <h5 class="center white-text"><br>Name<br>Store Manager</h5>
 	            </div>
 	        </div>
-	        </div>
         </div>
-
+        <center><a style="margin-bottom: 5px;" class="waves-effect waves-light btn green">Join Us</a></center>
+        <div class="blue-grey darken-4 z-depth-1">
+        	<h4 class="white-text center">Sign Up For Our Newsletter</h4>
+        	<center>
+        	<div style="width: 500px" class="input-field white">
+	        	<i class="material-icons prefix">account_circle</i>
+	            <input id="icon_prefix" type="text" class="validate"> 
+	            <label for="icon_prefix">Name</label>
+            </div>
+            <div style="width: 500px" class="input-field white">
+	            <i class="material-icons prefix">email</i>
+	            <input id="icon_prefix" type="text" class="validate">
+	            <label for="icon_prefix">E-mail</label>
+            </div>
+	        <a style="margin-top: 25px; width: 400px !important; height: 75px !important; font-size: 5em; padding-top: 13px; padding-bottom: 13px;" class="waves-effect waves-light btn-large blue">Submit</a>
+            </center>
+        </div>
 
 
    <!--Import jQuery before materialize.js-->
