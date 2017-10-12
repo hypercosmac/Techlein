@@ -14,33 +14,32 @@
 <body class = "blue-grey darken-4">
   <nav class="grey darken-3 ">
   <div class="nav-wrapper navbar-fixed">
-  	<a href="#!" class="brand-logo center green-text"><span class="brand-logo center red-text">{</span>TECHLEIN<span class="brand-logo center red-text">}</span></a>
+    <a href="#!" class="brand-logo center green-text">{TECHLEIN}</a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-	  <ul class="right hide-on-med-and-down">
-	    <li><a href="/Techlein/index.html">Home</a></li>
-	    <li><a href="/Techlein/blog/">Blog</a></li>
-	    <li><a href="/Techlein/forum/">Forum</a></li>
-	    <li><a href="/Techlein/projects/">Projects</a></li>
-	    <li><a href="/Techlein/store/">Store</a></li>
-	    <li><a href="/Techlein/contact/">Contact Us</a></li>
-	  </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/Techlein/index.html">Home</a></li>
+      <li><a href="/Techlein/blog/">Blog</a></li>
+      <li><a href="/Techlein/forum/">Forum</a></li>
+      <li><a href="/Techlein/projects/">Projects</a></li>
+      <li><a href="/Techlein/store/">Store</a></li>
+      <li><a href="/Techlein/contact/">Contact Us</a></li>
+    </ul>
     </div>
     <div class="nav-wrapper navbar-fixed">
       <ul class="side-nav" id="mobile-demo">
-      <li><a href="/Techlein/index.html">Home</a></li>
-	    <li><a href="/Techlein/blog/">Blog</a></li>
-	    <li><a href="/Techlein/forum/">Forum</a></li>
-	    <li><a href="/Techlein/projects/">Projects</a></li>
-	    <li><a href="/Techlein/store/">Store</a></li>
-	    <li><a href="/Techlein/contact/">Contact Us</a></li>
+        <li><a href="/Techlein/index.html">Home</a></li>
+      <li><a href="/Techlein/blog/">Blog</a></li>
+      <li><a href="/Techlein/forum/">Forum</a></li>
+      <li><a href="/Techlein/projects/">Projects</a></li>
+      <li><a href="/Techlein/store/">Store</a></li>
+      <li><a href="/Techlein/contact/">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
+    
 
-
-
-  <div class="footer-copyright blue-grey darken-4">
+        <div class="footer-copyright blue-grey darken-4">
             <div class="container white-text">
             © 2017 Techlein
             <a target="_blank" href="https://www.facebook.com/Techlein-1451464928252247/"><img style="padding-bottom: 10px;" height="50" src="images/Facebook_like_thumb.png" class="right">
@@ -49,7 +48,17 @@
             </div>
           </div>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+   <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>$(".button-collapse").sideNav();</script>
+      <script>$(document).ready(function(){
+      $('.slider').slider();
+      $('.slider').height(625);
+      $('.slides').height(600);
+    });</script>
+
+   
 </body>
 </html>
