@@ -4,14 +4,16 @@
 <head>
     <style>
     div.gallery {
-        margin: 5px;
+        margin: 3px;
         /*border: 1px solid #ccc;*/
         float: left;
         width: 300px;
     }
 
     div.gallery:hover {
-        border: 1px solid #777;
+        border: 0.2px solid #777;
+        opacity: 0.7;
+        filter: alpha(opacity=70); /* For IE8 and earlier */
     }
 
     div.gallery img {
@@ -64,7 +66,7 @@
     </div>
 
   </nav>
-<div class="row valign-wrapper">
+<div class="row">
   <div class="gallery col s12 m6 l3">
   <a target="_blank">
       <img src="/Techlein/images/ATV-final.png" alt="ATV picture" width="600" height="200">
