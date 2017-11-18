@@ -64,7 +64,7 @@
     </ul>
     </div>
   
-    <div class="nav-wrapper">
+    <div>
       <ul class="side-nav" id="mobile-demo">
       <li><a href="/">Home</a></li>
       <li><a href="/blog/">Blog</a></li>
@@ -77,7 +77,7 @@
 
   </nav>
 
-  <h2 class="center red-text text-lighten-4 flow-text" id="top">PROJECTS</h2>
+  <h2 class="center red-text text-lighten-4 flow-text section scrollspy" id="top">PROJECTS</h2>
   <div class="row">
     <div class="gallery col s12 m6 l3">
     <a target="_blank">
@@ -180,6 +180,10 @@
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/js/materialize.min.js"></script>
-  <script>$(".button-collapse").sideNav()</script>
+  <script>$(".button-collapse").sideNav()
+    $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+    });
+  </script>
 </body>
 </html>

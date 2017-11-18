@@ -41,7 +41,7 @@
   </nav>
 </div>
 
-    <div class="slider blue-grey darken-4" id="top">
+    <div class="slider blue-grey darken-4 section scrollspy" id="top">
       <ul class="slides">
         <li>
           <img class ="responsive-img" src="images/IMG-20170610-WA0004.jpg">
@@ -167,10 +167,17 @@
       <script type="text/javascript" src="/js/materialize.min.js"></script>
       <script>$(".button-collapse").sideNav()</script>
       <script>$(document).ready(function(){
-      $('.slider').slider();
-      $('.slider').height(625);
-      $('.slides').height(600);
-    });</script>
+        $('.slider').slider();
+        $('.slider').height(625);
+        $('.slides').height(600);
+        }) ;
+
+        $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+        });
+
+      </script>
+
 
    
 </body>
