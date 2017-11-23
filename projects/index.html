@@ -78,39 +78,55 @@
   </nav>
 
   <h2 class="center red-text text-lighten-4 flow-text section scrollspy" id="top">PROJECTS</h2>
+  
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs-fixed-width">
+        <li class="tab col s3 active"><a onclick="sort(a)">All</a></li>
+        <li class="tab col s3"><a class="active" onclick="sort(m)">Middle School</a></li>
+        <li class="tab col s3"><a onclick="sort(h)">High School</a></li>
+        <li class="tab col s3"><a onclick="sort(e)">Electronics</a></li>
+        <li class="tab col s3 active"><a onclick="sort(cs)">Computer Science</a></li>
+        <li class="tab col s3"><a class="active" onclick="sort(ms)">Masters</a></li>
+        <li class="tab col s3"><a onclick="sort(q)">Quick</a></li>
+        <!--<li class="tab col s3"><a onclick=""></a></li>-->
+      </ul>
+    </div>
+  </div>
+
   <div class="row">
     <div class="gallery col s12 m6 l3">
     <a target="_blank">
         <img src="/images/ATV-final.png" alt="ATV picture" width="600" height="200">
       </a>
-      <div class="desc white-text tooltiptext">Autonomous Transporting Vehicle</div>
+      <div class="desc white-text tooltiptext all electronics cs masters">Autonomous Transporting Vehicle</div>
   </div>
 
   <div class="gallery col s12 m6 l3">
     <a target="_blank">
         <img src="/images/glove.jpeg" alt="Traffic Glove picture" width="600" height="400">
       </a>
-      <div class="white-text tooltiptext">Glove to control traffic</div>
+      <div class="white-text tooltiptext high all electronics middle quick">Glove to control traffic</div>
   </div>
 
     <div class="gallery col s12 m6 l3">
       <a target="_blank">
           <img src="/images/bottle.png" alt="Smart bottle picture" width="600" height="400">
         </a>
-        <div class="white-text tooltiptext">A Smart Bottle which makes water and reminds you to drink water (Dehumidifier in bottle)</div>
+        <div class="white-text tooltiptext all electronics cs masters">A Smart Bottle which makes water and reminds you to drink water (Dehumidifier in bottle)</div>
     </div>
 
     <div class="gallery col s12 m6 l3">
       <a target="_blank">
           <img src="/images/Med-cabinet.png" alt="Medicine Cabinet picture" width="600" height="400">
         </a>
-        <div class="white-text tooltiptext">Medicine cabinet which reminds you to take medicines on time</div>
+        <div class="white-text tooltiptext high all electronics middle quick">Medicine cabinet which reminds you to take medicines on time</div>
     </div>
     <div class="gallery col s12 m6 l3">
       <a target="_blank">
           <img src="/images/ebike.jpg" alt="e-Bike picture" width="600" height="400">
         </a>
-        <div class="white-text tooltiptext">Smart E-bike</div>
+        <div class="white-text tooltiptext all electronics cs masters">Smart E-bike</div>
     </div>
 
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
@@ -123,46 +139,46 @@
       <a target="_blank">
           <img src="/images/door.png" alt="door picture" width="600" height="400">
         </a>
-        <div class="white-text tooltiptext">Smart door</div>
+        <div class="white-text tooltiptext all electronics cs masters">Smart door</div>
     </div>
     <div class="gallery col s12 m6 l3">
     <a target="_blank">
         <img src="/images/robot_project_OAR.jpeg" alt="OAR picture" width="600" height="200">
       </a>
-      <div class="desc white-text tooltiptext">Obstacle Avoidance Robot</div>
+      <div class="desc white-text tooltiptext high all electronics cs">Obstacle Avoidance Robot</div>
   </div>
 
   <div class="gallery col s12 m6 l3">
     <a target="_blank">
         <img src="/images/solar_tracker_project.jpg" alt="Solar Tracker picture" width="600" height="400">
       </a>
-      <div class="white-text tooltiptext">Solar Tracker to harvest sun's energy</div>
+      <div class="white-text tooltiptext all electronics masters">Solar Tracker to harvest sun's energy</div>
   </div>
 
     <div class="gallery col s12 m6 l3">
       <a target="_blank">
           <img src="/images/color_music_project.png" alt="LED Equilizer picture" width="600" height="400">
         </a>
-        <div class="white-text tooltiptext">Colorful music, LED matrix equilizer using Arduino</div>
+        <div class="white-text tooltiptext middle high all electronics">Colorful music, LED matrix equilizer using Arduino</div>
     </div>
 
     <div class="gallery col s12 m6 l3">
       <a target="_blank">
           <img src="/images/parking_project.png" alt="Garage Perfect Parking picture" width="600" height="400">
         </a>
-        <div class="white-text tooltiptext">Garage Perfect Parking, Perfect moment to stop using ultrasonic sensors</div>
+        <div class="white-text tooltiptext high all electronics middle quick">Garage Perfect Parking, perfect moment to stop using ultrasonic sensors</div>
     </div>
     <div class="gallery col s12 m6 l3">
       <a target="_blank">
           <img src="/images/home_security_project.jpg" alt="Home Security System picture" width="600" height="400">
         </a>
-        <div class="white-text tooltiptext">Home Security System, Detect intruders</div>
+        <div class="white-text tooltiptext all electronics cs masters">Home Security System, Detect intruders</div>
     </div>
     <div class="gallery col s12 m6 l3">
       <a target="_blank">
           <img src="/images/water_dispense_project.png" alt="Water dispenser picture" width="600" height="400">
         </a>
-        <div class="white-text tooltiptext">Electrically dispense water</div>
+        <div class="white-text tooltiptext high all electronics">Electric water dispenser</div>
     </div>
 </div>
 
@@ -182,8 +198,45 @@
   <script type="text/javascript" src="/js/materialize.min.js"></script>
   <script>$(".button-collapse").sideNav()
     $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
+      $('.scrollspy').scrollSpy();
     });
+    $(document).ready(function(){
+      $('ul.tabs').tabs('select_tab', 'tab_id');
+    });
+
+    sort(x) {
+      if (x == a) {
+        document.getElementsByClassName("all").style.visibility = "visible";
+      }
+      else if (x == cs) {
+        document.getElementsByClassName("all").style.visibility = "hidden";
+        document.getElementsByClassName("cs").style.visibility = "visible";
+      }
+      else if (x == h) {
+        document.getElementsByClassName("all").style.visibility = "hidden";
+        document.getElementsByClassName("high").style.visibility = "visible";
+      }
+      else if (x == q) {
+        document.getElementsByClassName("all").style.visibility = "hidden";
+        document.getElementsByClassName("quick").style.visibility = "visible";
+      }
+      else if (x == ms) {
+        document.getElementsByClassName("all").style.visibility = "hidden";
+        document.getElementsByClassName("masters").style.visibility = "visible";
+      }
+      else if (x == m) {
+        document.getElementsByClassName("all").style.visibility = "hidden";
+        document.getElementsByClassName("middle").style.visibility = "visible";
+      }
+      else if (x == e) {
+        document.getElementsByClassName("all").style.visibility = "hidden";
+        document.getElementsByClassName("electronics").style.visibility = "visible";
+      }
+      else {
+        document.getElementsByClassName("all").style.visibility = "visible";
+      }
+
+    }
   </script>
 </body>
 </html>
