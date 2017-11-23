@@ -36,8 +36,13 @@
         visibility: visible;
     }
 
-    .tabs {
-      color: white;
+    media (max-width: 1900px) {
+
+      .tabs {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      }
     }
     </style>
    <!--Import Google Icon Font-->
@@ -86,13 +91,13 @@
   <div class="row">
     <div class="col s12">
       <ul class="tabs blue-grey darken-3">
-        <li class="tab col s3 l2"><a class="active" onClick="sort(a)">All</a></li>
-        <li class="tab col s3 l2"><a onClick="sort(m)">Middle School</a></li>
-        <li class="tab col s3 l2"><a onClick="sort(h)">High School</a></li>
-        <li class="tab col s3 l2"><a onClick="sort(e)">Electronics</a></li>
-        <li class="tab col s3 l2"><a onClick="sort(cs)">Computer Science</a></li>
-        <li class="tab col s3 l2"><a onClick="sort(ms)">Masters</a></li>
-        <li class="tab col s3 l2"><a onClick="sort(q)">Quick</a></li>
+        <li class="tab col s3 l2"><a class="active" onclick="sortprojects(a)">All</a></li>
+        <li class="tab col s3 l2"><a onclick="sortprojects(m)">Middle School</a></li>
+        <li class="tab col s3 l2"><a onclick="sortprojects(h)">High School</a></li>
+        <li class="tab col s3 l2"><a onclick="sortprojects(e)">Electronics</a></li>
+        <li class="tab col s3 l2"><a onclick="sortprojects(cs)">Computer Science</a></li>
+        <li class="tab col s3 l2"><a onclick="sortprojects(ms)">Masters</a></li>
+        <li class="tab col s3 l2"><a onclick="sortprojects(q)">Quick</a></li>
         </div>
         <!--<li class="tab col s3"><a onclick=""></a></li>-->
       </ul>
@@ -209,7 +214,7 @@
       $('ul.tabs').tabs();
     });
 
-    function sort(x) {
+    function sortprojects(x) {
       if (x == a) {
         document.getElementsByClassName("all").style.visibility = visible;
       }
