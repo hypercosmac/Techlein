@@ -206,17 +206,19 @@
           </div>
     </div>
   <script type="text/javascript">
+        var all_els = document.getElementsByClassName('all');
+
+        console.log(all_els);
+
     function sortprojectsa() {
-        var els = document.getElementsByClassName('masters electronics cs');
-        while(els){
+        
+                console.log("in function", all_els);
+
         for(i = 0; i < els.length; i++){
-          els[i].style.visibility = "visible";
-        }
-        break;
-      }
+          all_els[i].style.visibility = "visible";
+          }
       }
     function sortprojectscs() {
-      console.log(document.getElementsByClassName('all'));
         document.getElementsByClassName('all').style.visibility = 'hidden';
         document.getElementsByClassName('cs').style.visibility = 'visible';
       }
@@ -230,7 +232,7 @@
       }
     function sortprojectsms() {
         document.getElementsByClassName('all').style.visibility = 'hidden';
-        document.getElementsByClassName('masters electronics cs').style.visibility = 'visible';
+        document.getElementsByClassName('masters').style.visibility = 'visible';
       }
     function sortprojectsm() {
         document.getElementsByClassName('all').style.visibility = 'hidden';
