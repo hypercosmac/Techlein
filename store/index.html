@@ -11,28 +11,20 @@
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
       <title>Techlein</title>
       <style>
-        body, html {
-        height: 100%;
-        margin: 0;
-        }
-
-        .bgimg {
-            background-image: url('/images/autumn_dark_background.jpg');
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-            color: white;
-            font-family: "Courier New", Courier, monospace;
-            font-size: 25px;
-        }
         hr {
             margin: auto;
             width: 40%;
         }
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
       </style>
 </head>
-<body class = "blue-grey darken-4">
+<body class = "blue-grey darken-4" style="background-image: url('/images/autumn_dark_background.jpg');font-family: 'Courier New', Courier, monospace; font-size: 25px; background-size: cover; background-position: center; height: 100%; position: relative;" >
   <nav class="grey darken-3 ">
   <div class="nav-wrapper">
 
@@ -68,7 +60,7 @@
       </a>
   </div>
 
-    <div class="bgimg">
+    <div class="">
       <div class="middle">
         <h1>COMING SOON</h1>
         <hr>
