@@ -208,9 +208,12 @@
   <script type="text/javascript">
     function sortprojectsa() {
         var els = document.getElementsByClassName('masters electronics cs');
+        while(els){
         for(i = 0; i < els.length; i++){
-          h[i].style.visibility = "visible";
+          els[i].style.visibility = "visible";
         }
+        break;
+      }
       }
     function sortprojectscs() {
       console.log(document.getElementsByClassName('all'));
