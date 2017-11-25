@@ -207,8 +207,10 @@
     </div>
   <script type="text/javascript">
     function sortprojectsa() {
-        document.getElementsByClassName('masters electronics cs').style.visibility = 'visible';
-        console.log(document.getElementsByClassName('masters electronics cs'));
+        var els = document.getElementsByClassName('masters electronics cs');
+        for(i = 0; i < els.length; i++){
+          h[i].style.visibility = "visible";
+        }
       }
     function sortprojectscs() {
       console.log(document.getElementsByClassName('all'));
