@@ -55,7 +55,7 @@
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
       <title>Techlein</title>
 </head>
-<body class = "blue-grey darken-4">
+<body onload = "initialize()" class = "blue-grey darken-4">
   <nav class="grey darken-3 ">
 
   <div class="nav-wrapper">
@@ -206,41 +206,51 @@
           </div>
     </div>
   <script type="text/javascript">
+
+      function initialize(){
         var all_els = document.getElementsByClassName('all');
+        var cs_els = document.getElementsByClassName('cs');
+        var h_els = document.getElementsByClassName('high');
+        var q_els = document.getElementsByClassName('quick');
+        var ms_els =  document.getElementsByClassName('masters');
+        var m_els = document.getElementsByClassName('middle');
+        var e_els = document.getElementsByClassName('electronics');
 
-        console.log(all_els);
-
-    function sortprojectsa() {
-        
-                console.log("in function", all_els);
-
-        for(i = 0; i < els.length; i++){
-          all_els[i].style.visibility = "visible";
+      }
+      function hide(){
+          for(i = 0; i < all_els.length; i++){
+          all_els[i].style.visibility = "hidden";
           }
       }
+
+      function show(els){
+          for(i = 0; i < els.length; i++){
+          els[i].style.visibility = "visible";
+          }
+      }
+
+    function sortprojectsa() {
+        show(all_els);
+      }
     function sortprojectscs() {
-        document.getElementsByClassName('all').style.visibility = 'hidden';
-        document.getElementsByClassName('cs').style.visibility = 'visible';
+        hide();
+        show(cs_els)
       }
     function sortprojectsh() {
-        document.getElementsByClassName('all').style.visibility = 'hidden';
-        document.getElementsByClassName('high').style.visibility = 'visible';
-      }
+        hide();
+        show(h_els)}
     function sortprojectsq() {
-        document.getElementsByClassName('all').style.visibility = 'hidden';
-        document.getElementsByClassName('quick').style.visibility = 'visible';
-      }
+        hide();
+        show(q_els) }
     function sortprojectsms() {
-        document.getElementsByClassName('all').style.visibility = 'hidden';
-        document.getElementsByClassName('masters').style.visibility = 'visible';
-      }
+        hide();
+        show(ms_els)   }
     function sortprojectsm() {
-        document.getElementsByClassName('all').style.visibility = 'hidden';
-        document.getElementsByClassName('middle').style.visibility = 'visible';
-      }
+        hide();
+        show(m_els)  }
     function sortprojectse() {
-        document.getElementsByClassName('all').style.visibility='hidden';
-        document.getElementsByClassName('electronics').style.visibility = 'visible';
+        hide();
+        show(e_els)
       }
   </script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
