@@ -105,13 +105,11 @@
   </div>
 
   <div class="row">
-    <div class="masters electronics cs">
-      <div class="gallery col s12 m6 l3" style="visibility: visible;">
+      <div class="gallery col s12 m6 l3 masters electronics cs" style="visibility: visible;">
         <a target="_blank">
           <img src="/images/ATV-final.png" alt="ATV picture" width="600" height="200">
         </a>
-        <div class="desc white-text tooltiptext">Autonomous Transporting Vehicle</div>
-      </div>
+      <div class="desc white-text tooltiptext">Autonomous Transporting Vehicle</div>
     </div>
 
   <div class="gallery col s12 m6 l3 high all electronics middle quick" style="visibility: visible;">
@@ -220,13 +218,13 @@
       }
       function hide(){
           for(i = 0; i < all_els.length; i++){
-          all_els[i].style.visibility = "hidden";
+          all_els[i].style.display = "none";
           }
       }
 
       function show(els){
           for(i = 0; i < els.length; i++){
-          els[i].style.visibility = "visible";
+          els[i].style.display = "initial";
           }
       }
 
