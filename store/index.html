@@ -58,7 +58,7 @@
 
     <a class="brand-logo center green-text">{TECHLEIN}</a>
     <a class="brand-logo left hide-on-med-and-down"><img src="/favicon.png" height="65px"></a>
-    <a class="brand-logo left hide-on-large-only"><img src="/favicon.png" height="65px"></a>
+    <a class="brand-logo right hide-on-large-only"><img src="/favicon.png" height="65px"></a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	  <ul class="right hide-on-med-and-down">
 	    <li><a href="/">Home</a></li>
@@ -91,7 +91,7 @@
 
     <div class="bgimg hide-on-med-and-down">
       <div class="middle">
-        <h1 class="pink-text text-lighten-1">IT'S NOT EASY TO FIND YOUR WAY THROUGH SUCH A VAST MILKY WAY</h1>
+        <h1 class="pink-text text-lighten-2">IT'S NOT EASY TO FIND YOUR WAY THROUGH SUCH A VAST MILKY WAY</h1>
         <hr>
         <p id="demo" style="font-size:45px;"></p>
       </div>
@@ -102,10 +102,10 @@
 
     <div class="hide-on-large-only">
       <div class="container z-depth-1">
-        <p class="center pink-text text-lighten-1" style="font-family: 'Courier New', Courier, monospace; font-size: 45px;">IT'S NOT EASY TO FIND YOUR WAY THROUGH SUCH A VAST MILKY WAY</p>
+        <p class="center pink-text text-lighten-2" style="font-family: 'Courier New', Courier, monospace; font-size: 45px;">IT'S NOT EASY TO FIND YOUR WAY THROUGH SUCH A VAST MILKY WAY</p>
         <div class="divider"></div>
-        <p id="demo" style="font-size: 35px;" style="font-family: 'Courier New' Courier, monospace; font-size: 25px;"></p>
-        <div class="flow-text white-text left" style="padding-top: 10px">Welcoming Partners</div>
+        <p id="demomobile" style="font-size: 35px;" style="font-family: 'Courier New' Courier, monospace; font-size: 25px;"></p>
+        <div class="flow-text white-text" style="padding-top: 10px">Welcoming Partners</div>
     </div>
 
     <script>
@@ -134,7 +134,15 @@
         // If the count down is over, write some text 
         if (distance < 0) {
             clearInterval(countdownfunction);
-            document.getElementById("demo").innerHTML = "EXPIRED";
+            document.getElementById("demo").innerHTML = "Coming Soon";
+        }
+        document.getElementById("demomobile").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(countdownfunction);
+            document.getElementById("demomobile").innerHTML = "Coming Soon";
         }
     }, 1000);
     </script>
