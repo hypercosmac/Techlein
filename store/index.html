@@ -117,7 +117,11 @@
         <div class="flow-text white-text" style="padding-top: 10px">Welcoming Partners</div>
     </div>
 
+    <a id="flipkart-app" href="http://affiliate.flipkart.com/install-app?affid=vikrammishra" class="button" style="width: 80%; visibility: hidden; background-image: /images/flipkart_app.jpeg;" background="/images/flipkart_app.jpeg"></a>
     <script>
+    if (/Android Mini/i.test(navigator.userAgent)) {
+    	document.getElementById("flipkart-app").style.visibility = "visible;"
+    }
     // Set the date we're counting down to
     var countDownDate = new Date("Mar 1, 2018 00:00:00").getTime();
 
